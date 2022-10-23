@@ -59,6 +59,8 @@ section {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
     align-items: center;
    
 }
