@@ -1,0 +1,326 @@
+/* general styses */
+
+/* html {box-sizing: border-box;} */
+
+*,
+*::before,
+*::after
+{box-sizing: inherit;}
+
+
+
+:root {
+    --second-font: 'Raleway', sans-serif;
+    --color-body: #212121;
+    --color-body-second: #757575;
+    --accent-color: #2196F3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-body);
+    /* outline: 2px solid tomato; */
+}
+
+/* Reset */
+
+h1,h2,h3.h4,h5,h6,p {margin: 0px;}
+
+
+.link { 
+text-decoration: none; 
+color: var(--color-body);
+}
+
+
+.list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {display: block;}
+
+/* Reset end  */
+
+.container {width: 1200px;}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* body styles */
+/* header styses */
+
+.div-header-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+   
+}
+
+.logotipe {
+    display: flex;
+    margin-right: 93px;
+    
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    
+    
+    }
+
+.header-nav {
+    display: flex;
+    margin-right: 344px;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    /* padding-top: 32px; */
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-body);
+        /* outline: 2px solid red */
+        }
+
+.header-list >li:not(:last-child) {margin-right: 50px;}
+
+        .header-text-web {color: #2196F3;}
+.header-text-studio {color: #000000;}
+
+.header-item:hover, .header-item:focus, .header-item:active {color: #2196F3;}
+
+.header-list-adress  {
+    display: flex;
+  
+    color: var(--color-body-second);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    }
+
+.header-list-adress >li:not(:last-child) {margin-right: 50px;}
+
+.header-list-adress:hover, .header-list-adress:focus, .header-list-adress:active {color: #2196F3;}
+
+.active-link {color: #2196F3;}
+
+/* main styles */
+
+.cap {background: #2F303A;
+}
+
+.div-cap {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-bottom: 200px;
+    padding-left: 452px;
+    
+}
+
+.cap-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 696px;
+    height: 120px;
+    margin-bottom: 30px;
+    }
+
+.cap-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+/* styles features */
+
+.div-features {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.features-list h3{
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;}
+
+.features-list p {font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+   
+    color: var(--color-body-second);}
+
+/* styles we-do */
+
+.div-we-do {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.we-do-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* styses Our-team */
+
+.our-team {background: #F5F4FA;}
+
+.div-our-team {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.our-team-h2 {font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    }
+
+.our-team h3 {font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    }
+
+.our-team p {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    }
+
+/* styles footer */
+
+.footer {background: #2F303A;}
+
+
+
+.footer-text-web {
+    color: #2196F3;}
+
+.footer-text-studio {
+    color: #FFFFFF;}
+
+.footer-logotipe {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+    color: #2196F3;}
+
+.footer-adress {font-style: normal;}
+
+.footer-adres-item {
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em;
+        color: #FFFFFF;}
+
+.footer-item {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);}
+
+.footer-item:hover, .footer-item:focus, .footer-item:active {color: #2196F3;}
+.footer-adres-item:hover, .footer-adres-item:focus, .footer-adres-item:active {color: #2196F3;}
+    
+
+/* STYSES FOR PORTFOLIO.HTML*/
+
+    /* main styles */
+
+    .visually-hidden, .features-h2 {
+        position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+        
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+    }
+
+.div-portfolio {
+    display: inline-block;
+}
+
+.button-all {background: #F5F4FA;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        font-family:inherit;
+        cursor: pointer;}
+
+.filters-button {
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    
+    font-family: inherit;
+    cursor: pointer;}
+
+    .button-all:hover, .button-all:focus, .button-all:active {background: #2196F3; color: #F5F4FA;}
+    .filters-button:hover, .filters-button:focus, .filters-button:active {background: #2196F3; color: #F5F4FA}
+
+    /* styles portfolio list */
+
+.portfolio-list h2 {
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2.0;
+        letter-spacing: 0.06em;
+        color: var(--color-body);
+}
+
+.portfolio-list p {
+        font-size: 16px;
+        line-height: 1.87;
+        color: var(--color-body-second);
+}
