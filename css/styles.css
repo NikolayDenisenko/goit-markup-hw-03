@@ -48,8 +48,8 @@ img {display: block;}
 .container {width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 15px;
-    margin-right: 15px;}
+    margin-left: auto;
+    margin-right: auto;}
 
 section {
     padding-top: 94px;
@@ -138,7 +138,7 @@ section {
 }
 
 .cap-title {
-    display: inline;
+    display: inline-block;
     margin-bottom: 30px;
     
     
@@ -148,7 +148,7 @@ section {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 700px;
+    
     
     }
 
@@ -158,7 +158,9 @@ section {
     height: 50px;
     align-items: center;
     justify-content:center;
-    
+    margin-right: auto;
+    margin-left: auto;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -172,6 +174,7 @@ section {
     cursor: pointer;
     }
 
+.cap-button:hover, .cap-button:focus, .cap-button:active {background: #188CE8;}
 /* styles features */
 
 .div-features {
@@ -180,9 +183,17 @@ section {
    
 }
 
-.features-list {display: flex;}
+.features-list {
+    display: flex;
+    gap: 30px;
+}
 
-.features-list h3{
+.features-list-item {
+    flex-basis: calc((100%-90px)/4);
+}
+    
+    
+    .features-list h3{
     margin-top: 0px;
     
     
@@ -239,6 +250,12 @@ section {
     margin-right: 30px;
 }
 
+.our-team-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .our-team-h2 {
     padding-bottom: 30px;
     font-weight: 700;
@@ -261,7 +278,11 @@ section {
 
 /* styles footer */
 
-.footer {background: #2F303A;}
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 
 
@@ -272,6 +293,9 @@ section {
     color: #FFFFFF;}
 
 .footer-logotipe {
+    display: inline-block;
+    margin-bottom: 20px;
+    
     font-family: var(--second-font);
     font-weight: 700;
     font-size: 26px;
@@ -280,6 +304,10 @@ section {
     color: #2196F3;}
 
 .footer-adress {font-style: normal;}
+
+.footer-adres-list >li:not(:last-child) {
+    padding-bottom: 9px;
+}
 
 .footer-adres-item {
         font-size: 14px;
@@ -315,6 +343,10 @@ section {
             overflow: hidden;
     }
 
+.header-portfolio {
+    border: 1px solid #ECECEC;
+}
+
 .div-portfolio {
     display: inline-block;
 }
@@ -322,13 +354,20 @@ section {
 .filters-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 34px;
+    margin-bottom: 34px;
 }
 
 .filters-list >li:not(:last-child) {margin-right: 8px;}
 
-.button-all {background: #F5F4FA;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.button-all {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border: none;
+    
+    background: #F5F4FA;
+    
     border-radius: 4px;
         font-weight: 500;
         font-size: 16px;
@@ -338,6 +377,12 @@ section {
         cursor: pointer;}
 
 .filters-button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+    border: none;
+
     background: #F5F4FA;
     border-radius: 4px;
     font-weight: 500;
@@ -348,8 +393,10 @@ section {
     font-family: inherit;
     cursor: pointer;}
 
-    .button-all:hover, .button-all:focus, .button-all:active {background: #2196F3; color: #F5F4FA;}
-    .filters-button:hover, .filters-button:focus, .filters-button:active {background: #2196F3; color: #F5F4FA}
+    .button-all:hover, .button-all:focus, .button-all:active {background: #2196F3; color: #F5F4FA; 
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
+    .filters-button:hover, .filters-button:focus, .filters-button:active {background: #2196F3; color: #F5F4FA; 
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
 
     /* styles portfolio list */
 
@@ -360,8 +407,21 @@ section {
 
 .portfolio-list >a:not(:last-child) {margin-right: 30px; margin-bottom: 30px;}
 
+.portfolio-info {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    
+    
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
 .portfolio-list h2 {
-    font-weight: 700;
+    margin-bottom: 4px;
+        font-weight: 700;
         font-size: 18px;
         line-height: 2.0;
         letter-spacing: 0.06em;
