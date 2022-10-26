@@ -26,7 +26,7 @@ body {
 
 /* Reset */
 
-h1,h2,h3.h4,h5,h6,p {margin: 0px;}
+h1,h2,h3,h4,h5,h6,p {margin: 0;}
 
 
 .link { 
@@ -59,10 +59,14 @@ section {
 /* body styles */
 /* header styses */
 
-.div-header-content {
-    display: flex;
+.header {
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.div-header-content {
+    display: flex;
+    
     align-items: center;
    
 }
@@ -87,13 +91,13 @@ section {
 
 .header-list {
     display: flex;
-    /* padding-top: 32px; */
+    
     
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-body);
-        /* outline: 2px solid red */
+        
         }
 
 .header-list >li:not(:last-child) {margin-right: 50px;}
@@ -128,8 +132,7 @@ section {
 }
 
 .div-cap {
-    display: inline-block;
-    
+        
     margin-left: auto;
     margin-right: auto;
    
@@ -256,15 +259,25 @@ section {
     border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-h2 {
+.our-team-info {
+    padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;;
+    
+}
+
+.our-team-h2 {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     }
 
-.our-team h3 {font-weight: 500;
+.our-team h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -348,7 +361,7 @@ section {
 }
 
 .div-portfolio {
-    display: inline-block;
+    
 }
 
 .filters-list {
@@ -403,6 +416,7 @@ section {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .portfolio-list >a:not(:last-child) {margin-right: 30px; margin-bottom: 30px;}
